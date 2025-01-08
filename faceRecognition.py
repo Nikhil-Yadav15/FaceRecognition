@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-model2 = load_model(r"P:\ML\facedetection\FD_model1.keras")
+model2 = load_model(r"recognition_model.keras")
 def webcam():
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
