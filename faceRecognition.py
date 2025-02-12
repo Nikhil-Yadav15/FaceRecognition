@@ -32,7 +32,6 @@ def webcam():
         cv2.imshow("Webcam", frame)
         if key == ord('q'):
             break
-
     cap.release()
     cv2.destroyAllWindows()
 webcam()
